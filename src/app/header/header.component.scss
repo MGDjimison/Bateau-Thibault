@@ -1,0 +1,20 @@
+.custom-header {
+    --background: #0077b6; /* Blue background */
+    --color: white;        /* White text color */
+    height: 100px;         /* Header height */
+    display: flex;         /* Flexbox layout */
+    justify-content: space-between; /* Space between left and right elements */
+    align-items: center;   /* Vertically center items */
+    padding: 0 10px;       /* Padding to the left and right */
+}
+
+.logo-object {
+    height: 50px;          /* Set a fixed height for the left logo */
+    width: auto;           /* Maintain aspect ratio */
+}
+
+.logo-panier {
+    height: 40px;          /* Set a fixed height for the right logo */
+    width: auto;           /* Maintain aspect ratio */
+    margin-left: 220px;     /* Some margin to the left to avoid sticking to text */
+}

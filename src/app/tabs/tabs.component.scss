@@ -1,0 +1,23 @@
+.custom-tabs {
+    --ion-tab-bar-background: #0077b6; /* Tab bar background */
+    --ion-tab-bar-color: #ffffff; /* Default color for inactive icons/text */
+    --ion-tab-bar-color-selected: #ffd700; /* Active color for icons/text */
+    --ion-tab-bar-height: 80px; /* Adjust tab bar height */
+}
+
+.custom-tabs ion-tab-bar {
+    height: 80px; /* Matches the custom height for the tab bar */
+    padding-bottom: 10px; /* Optional: add spacing for icons/text */
+    align-items: center; /* Vertically align icons and labels */
+}
+
+.custom-tabs ion-tab-button {
+    --color: #ffffff; /* Default text and icon color */
+    --color-selected: #ffd700; /* Highlighted text and icon color */
+    font-size: 14px; /* Adjust text size for better scaling with the increased height */
+}
+
+.custom-tabs ion-tab-icon {
+    height: 30px; /* Adjust icon size if needed */
+    width: 30px;
+}
