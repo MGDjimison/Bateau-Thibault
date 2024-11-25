@@ -1,9 +1,18 @@
 <ion-header class="ion-no-border">
   <ion-toolbar class="custom-header">
-    <!-- Left Side: Main Logo -->
-    <object type="image/svg+xml" data="assets/logo.svg" class="logo-object"></object>
-
-    <!-- Right Side: Panier Icon -->
-    <object type="image/svg+xml" data="assets/panier.svg" class="logo-panier"></object>
+    <ion-buttons slot="start">
+      <!-- Left Side: Main Logo -->
+      <ion-button [routerLink]="['/home']" class="custom-link" fill="clear">
+        <object type="image/svg+xml" data="assets/logo.svg" class="logo-object"></object>
+      </ion-button>
+    </ion-buttons>
+    
+    <!-- Spacer to push the next element to the right end -->
+    <div class="spacer"></div>
+    
+    <ion-buttons slot="end">
+      <!-- Right Side: Panier Icon -->
+      <object type="image/svg+xml" data="assets/panier.svg" class="logo-panier"></object>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>

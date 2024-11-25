@@ -1,0 +1,16 @@
+[
+    {   
+        "id": "1",
+        "nom_bateau": "De La Brise",
+        "longueur": "8.50m",
+        "Description": "Jérome qui demaille ses poissons",
+        "image": "https://www.lebateaudethibault.fr/cdn/shop/files/23376437_540217086326882_722636919349341436_n_800x.jpg?v=1614293067"
+    },
+    {
+        "id": "2",
+        "nom_bateau": "Saphir",
+        "longueur": "6.50m",
+        "Description": "C'est avec ce bateau que nous pêchons, à la ligne, le bar, le marquereau, ou encore le lieu jaune...",
+        "image": "https://www.lebateaudethibault.fr/cdn/shop/files/IMG_0318_800x.jpg?v=1614293067"
+    }
+]

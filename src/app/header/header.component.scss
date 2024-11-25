@@ -1,20 +1,53 @@
+/* Header Styling */
 .custom-header {
+    position: relative;
     --background: #0077b6; /* Blue background */
     --color: white;        /* White text color */
     height: 100px;         /* Header height */
     display: flex;         /* Flexbox layout */
-    justify-content: space-between; /* Space between left and right elements */
-    align-items: center;   /* Vertically center items */
-    padding: 0 10px;       /* Padding to the left and right */
+    justify-content: space-between; /* Place items at the far ends */
+    align-items: center;   /* Center items vertically */
+    padding: 0 16px;       /* Padding for spacing on the sides */
+    box-sizing: border-box; /* Include padding in the width calculation */
 }
 
+/* Left and Right Containers */
+.header-left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* Align items to the start */
+    align-items: center;         /* Center items vertically */
+}
+
+.header-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Align items to the end */
+    align-items: center;       /* Center items vertically */
+}
+
+/* Left Logo Styling */
 .logo-object {
-    height: 50px;          /* Set a fixed height for the left logo */
+    height: 50px;          /* Set a fixed height for the logo */
     width: auto;           /* Maintain aspect ratio */
+    pointer-events: none;  /* Ignore pointer events */
+    display: block;        /* Ensure it displays correctly */
 }
 
+/* Right Icon Styling */
 .logo-panier {
-    height: 40px;          /* Set a fixed height for the right logo */
+    height: 40px;          /* Set a fixed height for the panier icon */
     width: auto;           /* Maintain aspect ratio */
-    margin-left: 220px;     /* Some margin to the left to avoid sticking to text */
+    pointer-events: none;  /* Ignore pointer events */
+    display: block;        /* Ensure it displays correctly */
+}
+
+/* Button Styling */
+ion-button {
+    --background: transparent; /* Ensure the button background is clear */
+    padding: 0;                /* Remove extra padding */
+    border: none;              /* No border */
+    display: flex;             /* Flexbox for content alignment */
+    align-items: center;       /* Center content vertically */
+    justify-content: center;   /* Center content horizontally */
 }

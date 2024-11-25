@@ -21,3 +21,12 @@
     height: 30px; /* Adjust icon size if needed */
     width: 30px;
 }
+
+.tab-icon {
+    pointer-events: none; 
+    display: block;
+    padding: 10px;
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+}
