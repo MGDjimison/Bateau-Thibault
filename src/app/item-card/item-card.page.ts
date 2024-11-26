@@ -5,6 +5,7 @@ import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/stan
 import { HeaderComponent } from '../header/header.component';
 import { TabsComponent } from '../tabs/tabs.component';
 
+
 @Component({
   selector: 'app-item-card',
   templateUrl: './item-card.page.html',

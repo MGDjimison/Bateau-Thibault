@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { IonTabs, IonHeader, IonContent, IonToolbar, IonTitle, IonTab, IonTabBar, IonTabButton, IonIcon, IonLabel } from "@ionic/angular/standalone";
 
 @Component({
@@ -11,7 +11,7 @@ import { IonTabs, IonHeader, IonContent, IonToolbar, IonTitle, IonTab, IonTabBar
 })
 export class TabsComponent  implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {}
 

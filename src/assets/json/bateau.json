@@ -1,16 +1,239 @@
-[
-    {   
-        "id": "1",
-        "nom_bateau": "De La Brise",
-        "longueur": "8.50m",
-        "Description": "Jérome qui demaille ses poissons",
-        "image": "https://www.lebateaudethibault.fr/cdn/shop/files/23376437_540217086326882_722636919349341436_n_800x.jpg?v=1614293067"
-    },
-    {
-        "id": "2",
-        "nom_bateau": "Saphir",
-        "longueur": "6.50m",
-        "Description": "C'est avec ce bateau que nous pêchons, à la ligne, le bar, le marquereau, ou encore le lieu jaune...",
-        "image": "https://www.lebateaudethibault.fr/cdn/shop/files/IMG_0318_800x.jpg?v=1614293067"
-    }
-]
+{
+    "restaurants": [
+        {
+            "id": "1",
+            "name": "Bistrot des Gascons"
+        },
+        {
+            "id": "2",
+            "name": "Les fous de l'île"
+        },
+        {
+            "id": "3",
+            "name": "Bistrot Landais"
+        },
+        {
+            "id": "4",
+            "name": "Villa 9-trois"
+        },
+        {
+            "id": "5",
+            "name": "Bistrot du Sommelier"
+        }
+    ],
+    "bateaux": [
+        {   
+            "id": "1",
+            "nom_bateau": "De La Brise",
+            "longueur": "8.50m",
+            "Description": "Jérome qui demaille ses poissons",
+            "image": "https://www.lebateaudethibault.fr/cdn/shop/files/23376437_540217086326882_722636919349341436_n_800x.jpg?v=1614293067"
+        },
+        {
+            "id": "2",
+            "nom_bateau": "Saphir",
+            "longueur": "6.50m",
+            "Description": "C'est avec ce bateau que nous pêchons, à la ligne, le bar, le marquereau, ou encore le lieu jaune...",
+            "image": "https://www.lebateaudethibault.fr/cdn/shop/files/IMG_0318_800x.jpg?v=1614293067"
+        }
+    ],
+    "produits": [
+        {
+            "id": 12,
+            "name": "Aile de raie",
+            "category": 0,
+            "price": 10.0,
+            "unit": "kg",
+            "availability": true,
+            "sale": false,
+            "discount": 0.0,
+            "comments": "Pêche à la corde",
+            "owner": "tig",
+            "image": "https://www.lebateaudethibault.fr/cdn/shop/products/IMG_2045_1024x1024@2x.jpg?v=1590916757"
+        },
+        {
+            "id": 9,
+            "name": "Araignées",
+            "category": 2,
+            "price": 7.0,
+            "unit": "kg",
+            "availability": false,
+            "sale": false,
+            "discount": 0.0,
+            "comments": "Hors saison,  pêche aux casiers",
+            "owner": "tig",
+            "image": "https://www.lebateaudethibault.fr/cdn/shop/products/IMG_6984_1024x1024@2x.heic?v=1685592764"
+        },
+        {
+            "id": 3,
+            "name": "Bar de ligne",
+            "category": 0,
+            "price": 30.0,
+            "unit": "kg",
+            "availability": true,
+            "sale": false,
+            "discount": 0.0,
+            "comments": "Plus de 1.5kg le poisson",
+            "owner": "tig",
+            "image": "https://www.lebateaudethibault.fr/cdn/shop/products/DBDA5A72-CDED-415A-B61E-02D796746B2F_1024x1024@2x.jpg?v=1613983744"
+        },
+        {
+            "id": 2,
+            "name": "Bar de ligne portion",
+            "category": 0,
+            "price": 10.0,
+            "unit": "pièce",
+            "availability": true,
+            "sale": false,
+            "discount": 0.0,
+            "comments": "Environ 550-700g la pièce",
+            "owner": "tig",
+            "image": "https://www.lebateaudethibault.fr/cdn/shop/products/DBDA5A72-CDED-415A-B61E-02D796746B2F_1024x1024@2x.jpg?v=1613983744"
+        },
+        {
+            "id": 10,
+            "name": "Bouquets cuits",
+            "category": 1,
+            "price": 8.0,
+            "unit": "100g",
+            "availability": false,
+            "sale": false,
+            "discount": 0.0,
+            "comments": "Hors saison, pêche à l'épuisette",
+            "owner": "tig",
+            "image": "https://www.thalassa-tradition.fr/img/marche_de_paris/bouquet_z.jpg"
+        },
+        {
+            "id": 1,
+            "name": "Filet Bar de ligne",
+            "category": 0,
+            "price": 7.0,
+            "unit": "2 filets",
+            "availability": true,
+            "sale": false,
+            "discount": 0.0,
+            "comments": "environ 300g",
+            "owner": "tig",
+            "image": "https://www.lebateaudethibault.fr/cdn/shop/products/DBDA5A72-CDED-415A-B61E-02D796746B2F_1024x1024@2x.jpg?v=1613983744"
+        },
+        {
+            "id": 5,
+            "name": "Filet Julienne",
+            "category": 0,
+            "price": 19.0,
+            "unit": "kg",
+            "availability": false,
+            "sale": false,
+            "discount": 0.0,
+            "comments": "Pêche à la corde",
+            "owner": "tig",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm9W_RCeek7eKkpGmfhD8fDFc8m3xpDO9UyQ&s"
+        },
+        {
+            "id": 7,
+            "name": "Huitres N°2 St Vaast",
+            "category": 1,
+            "price": 9.5,
+            "unit": "Dz",
+            "availability": true,
+            "sale": false,
+            "discount": 0.0,
+            "comments": "",
+            "owner": "tig",
+            "image": "https://www.lebateaudethibault.fr/cdn/shop/products/image_8f711dd1-696a-424c-8c51-12b2146f5f0a_1024x1024@2x.jpg?v=1638115079"
+
+        },
+        {
+            "id": 8,
+            "name": "Huitres N°2 St Vaast",
+            "category": 1,
+            "price": 38.0,
+            "unit": "4 Dz",
+            "availability": true,
+            "sale": false,
+            "discount": 0.0,
+            "comments": "",
+            "owner": "tig",
+            "image": "https://www.lebateaudethibault.fr/cdn/shop/products/image_8f711dd1-696a-424c-8c51-12b2146f5f0a_1024x1024@2x.jpg?v=1638115079"
+
+        },
+        {
+            "id": 13,
+            "name": "Huîtres N°2 OR St Vaast",
+            "category": 1,
+            "price": 12.0,
+            "unit": "Dz",
+            "availability": true,
+            "sale": false,
+            "discount": 0.0,
+            "comments": "Médaille d'or Salon Agriculture",
+            "owner": "tig",
+            "image": "https://www.lebateaudethibault.fr/cdn/shop/products/image_8f711dd1-696a-424c-8c51-12b2146f5f0a_1024x1024@2x.jpg?v=1638115079"
+        },
+        {
+            "id": 14,
+            "name": "Huîtres N°2 OR St Vaast",
+            "category": 1,
+            "price": 24.0,
+            "unit": "2 Dz",
+            "availability": true,
+            "sale": false,
+            "discount": 0.0,
+            "comments": "Médaille d'or salon agriculture",
+            "owner": "tig",
+            "image": "https://www.lebateaudethibault.fr/cdn/shop/products/image_8f711dd1-696a-424c-8c51-12b2146f5f0a_1024x1024@2x.jpg?v=1638115079"
+        },
+        {
+            "id": 15,
+            "name": "Huîtres N°2 OR St Vaast",
+            "category": 1,
+            "price": 48.0,
+            "unit": "4 Dz",
+            "availability": true,
+            "sale": false,
+            "discount": 0.0,
+            "comments": "Médaille d'or salon agriculture",
+            "owner": "tig",
+            "image": "https://www.lebateaudethibault.fr/cdn/shop/products/image_8f711dd1-696a-424c-8c51-12b2146f5f0a_1024x1024@2x.jpg?v=1638115079"
+        },
+        {
+            "id": 16,
+            "name": "Huîtres N°2 St Vaast",
+            "category": 1,
+            "price": 19.0,
+            "unit": "2 Dz",
+            "availability": true,
+            "sale": false,
+            "discount": 0.0,
+            "comments": "",
+            "owner": "tig",
+            "image": "https://www.lebateaudethibault.fr/cdn/shop/products/image_8f711dd1-696a-424c-8c51-12b2146f5f0a_1024x1024@2x.jpg?v=1638115079"
+        },
+        {
+            "id": 4,
+            "name": "Lieu jaune de ligne",
+            "category": 0,
+            "price": 12.0,
+            "unit": "kg",
+            "availability": true,
+            "sale": false,
+            "discount": 0.0,
+            "comments": "Environ 550-700g la portion",
+            "owner": "tig",
+            "image": "https://www.lebateaudethibault.fr/cdn/shop/products/Captured_ecran2021-09-27a08.05.10_1024x1024@2x.png?v=1644325714"
+        },
+        {
+            "id": 6,
+            "name": "Moules de pêche",
+            "category": 1,
+            "price": 7.0,
+            "unit": "kg",
+            "availability": true,
+            "sale": true,
+            "discount": 5.0,
+            "comments": "",
+            "owner": "tig",
+            "image": "https://www.maisondelhuitre.fr/wp-content/uploads/2024/06/moules-peche-1024x682.jpg"
+        }
+    ]
+}
