@@ -1,0 +1,27 @@
+<app-header></app-header>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>detail-produit</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">detail-produit</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{prod.name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Category : {{prod.category}}</p>
+      <p>Prix : {{prod.price}} €</p>
+      <p>Unité : {{prod.unit}}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<app-tabs></app-tabs>
+

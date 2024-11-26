@@ -1,0 +1,29 @@
+<app-header></app-header>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Mon panier</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">panier</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    @for (produit of produits_dans_panier; track $index) {
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>{{ produit.name }}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>{{ produit.race }}</ion-card-content>
+        <ion-button color="warning">Voir produit</ion-button>
+        <ion-button color="danger">Supprimer</ion-button>
+      </ion-card>
+    }
+  </ion-list>
+  <ion-button>Valider mon panier</ion-button>
+</ion-content>
+<app-tabs></app-tabs>
