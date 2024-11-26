@@ -1,0 +1,57 @@
+.page-subtitle {
+    text-align: center;
+    font-size: 7.5vw;  /* Taille dynamique selon la largeur de l'écran */
+    color: #0077B6; /* Bleu clair */
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .card {
+    padding: 1em;
+    background-color: white;
+    border-radius: 4em;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;  /* Ajoute un espace au-dessus de la carte */
+  }
+  
+  
+  .card-body {
+    display: flex;
+    flex-direction: row; /* Alignement horizontal */
+    align-items: center;
+    justify-content: space-between; /* Texte et image alignés à gauche */
+    gap: 1em; /* Espacement entre éléments */
+  }
+  
+  .card-image {
+    flex: 2; /* Empêche l'image de se réduire si le contenu est trop large */
+  }
+  
+  .card-content {
+    flex-grow: 1; /* Permet au texte de prendre plus d'espace */
+  }
+  
+  #boat {
+    width: 80%;        /* Largeur adaptable */
+    height: auto;       /* Hauteur proportionnelle */
+    border-radius: 8px; /* Coins arrondis */
+    border: 2px solid #ddd; /* Bordure grise claire */
+    object-fit: cover;  /* Remplissage du conteneur sans déformation */
+    margin-top: 20px;
+
+  }
+  
+  .text {
+    text-align: center;
+    font-size: 28px; /* Taille du texte */
+    color: #0077B6; /* Bleu clair */
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+  
+  
+  .boat-list {
+    display: flex;
+    flex-direction: column; /* Liste verticale */
+    gap: 1.5em; /* Espacement entre les cartes */
+    padding: 1em; /* Espacement interne global */
+  }

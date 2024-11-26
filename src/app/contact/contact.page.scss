@@ -1,0 +1,57 @@
+
+.page-subtitle {
+    font-family: 'Jomhuria', sans-serif; /* Typographie personnalisée */
+    font-size: 28px; /* Taille plus grande que le contenu */
+    text-align: center; /* Centré */
+    color: blue; /* Couleur du texte */
+    margin-bottom: 20px; /* Espacement avec les icônes */
+}
+.page-description {
+    text-align: center; /* Centrer le texte */
+    font-size: 20px; /* Taille plus grande pour correspondre au style */
+    font-weight: bold; /* Texte en gras */
+    color: black; /* Couleur du texte */
+    margin-bottom: 20px; /* Espacement entre le texte et les icônes */
+    margin-top: 10px; /* Espacement avec le titre */
+    line-height: 1.5; /* Améliore l'espacement entre les lignes */
+  }
+  
+
+/* Conteneur principal pour centrer les icônes verticalement et horizontalement */
+.icon-container {
+    display: flex; /* Disposition flexible */
+    flex-direction: row; /* Alignement horizontal */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    gap: 700px; /* Espace entre les icônes */
+    height: 100vh; /* Occupe toute la hauteur de la page */
+    margin: 0; /* Supprime tout espacement additionnel */
+    padding: 0; /* Supprime tout remplissage additionnel */
+}
+
+/* Style des items (chaque icône + label) */
+.icon-item {
+    text-align: center; /* Texte centré sous l'icône */
+    display: flex;
+    flex-direction: column; /* Empile l'icône et le label verticalement */
+    align-items: center; /* Centre les éléments dans chaque "item" */
+    margin-top: 500px;
+}
+
+/* Style des icônes */
+ion-icon {
+    font-size: 80px; /* Taille agrandie des icônes */
+    color: blue; /* Couleur des icônes */
+
+}
+
+/* Style des labels */
+ion-label {
+    font-size: 18px; /* Taille légèrement réduite */
+    color: black; /* Couleur des textes */
+    font-weight: bold; /* Texte plus visible */
+    position: relative; /* Permet un ajustement avec top/left */
+    top: -30px; /* Décale légèrement vers le haut */
+    left: 10px; /* Décale légèrement vers la droite */
+}
+
