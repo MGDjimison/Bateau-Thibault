@@ -1,40 +1,38 @@
-<app-header></app-header>
-<div class="container">
-  <div class="container-card">
-    <ion-label class="text-section">
-      <h2>Liste des {{ type}} :</h2>
-    </ion-label>
-    <ion-list>
-      <ng-container *ngIf="type === 'bateaux'">
-        <ion-item *ngFor="let item of items">
+<app-container>
+  <ion-label class="text-section">
+    <h2>Liste des {{ type}} :</h2>
+  </ion-label>
+  <ion-list>
+    <ng-container *ngIf="type === 'bateaux'">
+      <ion-item *ngFor="let item of items">
+        <a [routerLink]="[item.id]">
           <img [src]="item.image" alt="bateau image" class="item-image" />
           <ion-label class="text-section">
             <h1>{{ item.nom_bateau }}</h1>
+            <p>{{ item.description}}</p>
           </ion-label>
-        </ion-item>
-      </ng-container>
+        </a>
+      </ion-item>
+    </ng-container>
 
-      <ng-container *ngIf="type === 'produits'">
-        <ion-item *ngFor="let item of items">
+    <ng-container *ngIf="type === 'produits'">
+      <ion-item *ngFor="let item of items">
+        <a [routerLink]="[item.id]">
           <img [src]="item.image" alt="produits" class="item-image" />
           <ion-label class="text-section">
             <h1>{{ item.name }}</h1>
             <p>Price: {{ item.price }} euros /{{ item.unit }}</p>
           </ion-label>
-        </ion-item>
-      </ng-container>
+        </a>
+      </ion-item>
+    </ng-container>
 
-      <ng-container *ngIf="type === 'restaurants'">
-        <ion-item *ngFor="let item of items">
-          <ion-label class="text-section">
-            <h1>{{ item.name }}</h1>
-          </ion-label>
-        </ion-item>
-      </ng-container>
-
-      <ng-template #produitsTemplate>
-
-      </ng-template>
-    </ion-list>
-  </div>
-</div>
+    <ng-container *ngIf="type === 'restaurants'">
+      <ion-item *ngFor="let item of items">
+        <ion-label class="text-section">
+          <h1>{{ item.name }}</h1>
+        </ion-label>
+      </ion-item>
+    </ng-container>
+  </ion-list>
+</app-container>

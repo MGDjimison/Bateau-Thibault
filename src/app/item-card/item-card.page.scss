@@ -3,28 +3,47 @@
 .container {
   position: relative;
   background-color: #E9E9E9;
-  height: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .container-card {
   position: relative;
   background-color: #ffffff;
-  height: fit-content;
+  flex: 1;
   margin: 15px;
   border-radius: 15px;
   padding: 10px;
+  overflow-y: auto;
+  max-height: calc(50vh - 80px);
+}
+
+ion-button {
+  position: relative;
+  top: 0;
+}
+
+ion-button.custom-button {
+  --background: #0077b6;
+  --color: white;
+  width: 98%;
 }
 
 .image-container {
   border-radius: 100px;
 }
 
-.text-section {
+.text-section,
+.text-section2 {
   font-family: "Jomhuria", serif;
-  line-height: 150%;
+  line-height: 0;
   font-style: normal;
   color: #0077b6;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+
 }
 
 .text-section h1 {
@@ -33,6 +52,36 @@
 }
 
 .text-section p {
-  line-height: 50%;
   font-size: 30px;
+  color: black;
+}
+
+.pickerZone {
+  position: relative;
+  top: -20px;
+  width: 100%;
+  height: fit-content;
+}
+
+ion-picker {
+  right: -70%;
+  top: -160%;
+  width: 60px;
+}
+
+ion-select {
+  font-size: 30px;
+  font-family: "Jomhuria", serif;
+  width: 100px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  padding: 10px;
+  border-bottom: none;
+  border-style: none;
+}
+
+.text-section2 p {
+  font-size: 30px;
+  line-height: 150%;
+  color: black;
 }

@@ -3,20 +3,16 @@
 .container {
   position: relative;
   background-color: #E9E9E9;
-  height: 100vh; 
-  display: flex;
-  flex-direction: column;
-  overflow: hidden; 
+  height: 100%;
 }
 
 .container-card {
   position: relative;
   background-color: #ffffff;
-  flex: 1; 
+  height: fit-content;
   margin: 15px;
   border-radius: 15px;
   padding: 10px;
-  overflow-y: auto; 
 }
 
 .image-container {
@@ -29,38 +25,36 @@
   font-style: normal;
   color: #0077b6;
   padding: 10px;
+  text-align: center;
 }
 
 .text-section h1 {
   line-height: 50%;
-  font-size: 50px;
-}
-
-.text-section h2 {
-  line-height: 50%;
   font-size: 60px;
-  text-align: center;
 }
 
 .text-section p {
   line-height: 50%;
-  font-size: 20px;
+  font-size: 30px;
+  color: black;
 }
 
-.item-image {
-  width: 80px;
-  padding-right: 5px;
-  border-radius: 10px; 
+ion-icon {
+  color: #0077b6;
 }
 
 ion-item {
-  padding: 5px;
+  color: #0077b6;
+  padding-bottom: 20px;
 }
 
-a {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
+ion-list p {
+  color: #0077b6;
+  font-family: "Jomhuria", serif;
+  padding-left: 30px;
+  font-size: 50px;
 }
 
-
+ion-icon {
+  font-size: 48px;
+}

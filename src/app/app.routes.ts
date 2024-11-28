@@ -20,8 +20,18 @@ export const routes: Routes = [
         loadComponent: () => import('./item-list/item-list.page').then((m) => m.ItemListPage),
       },
       {
-        path: 'item-card',
+        path: 'liste/:type/:id',
         loadComponent: () => import('./item-card/item-card.page').then((m) => m.ItemCardPage),
+      },
+    
+      {
+        path: 'contacts',
+        loadComponent: () => import('./contacts/contacts.page').then( m => m.ContactsPage)
+      },
+
+      {
+        path: 'panier',
+        loadComponent: () => import('./panier/panier.page').then( m => m.PanierPage)
       },
     ],
     

@@ -1,0 +1,46 @@
+<app-container>
+  <ion-label class="text-section">
+    <h2>Panier</h2>
+  </ion-label>
+
+  <ng-container *ngIf="items.length > 0">
+    <ion-list>
+      <ion-item *ngFor="let item of items">
+        <img [src]="item.image" alt="bateau image" class="item-image" />
+        <ion-label class="text-section">
+          <h1>{{ item.name }}</h1>
+          <p>Quantité commandée : {{ item.quantite }} x {{item.unit}}</p>
+          <p>Prix : {{ item.quantite * item.price }} euros</p>
+        </ion-label>
+        <ion-button class="custom-button" (click)="deleteFromStorage(item.id)">
+          <ion-icon name="close-circle-outline" size="large"></ion-icon>
+        </ion-button>
+      </ion-item>
+    </ion-list>
+
+    <div class="pickerZone">
+      <ion-item>
+        <ion-select 
+          label="Choisir le point de livraison"
+          [(ngModel)]="selectedDeliveryPoint">
+          <ion-select-option *ngFor="let i of restaurants" [value]="i.name">
+            {{ i.name }}
+          </ion-select-option>
+        </ion-select>
+      </ion-item>
+    </div>
+
+    <ion-button 
+      class="custom-button2" 
+      (click)="order()" 
+      [disabled]="!selectedDeliveryPoint">
+      Valider la commande
+    </ion-button>
+  </ng-container>
+
+  <ng-container *ngIf="items.length == 0">
+    <ion-label class="text-section">
+      <p [style]="'font-size: 30px'">Le panier est vide</p>
+    </ion-label>
+  </ng-container>
+</app-container>

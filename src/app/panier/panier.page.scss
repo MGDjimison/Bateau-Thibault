@@ -63,4 +63,35 @@ a {
   align-items: center;
 }
 
+ion-button.custom-button {
+  --background: #0077b6;
+  --color: white;
+}
+
+ion-button.custom-button2 {
+  --background: #0077b6;
+  --color: white;
+  width: 100%;
+}
+
+ion-button.custom-button3 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  --background: transparent;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: content-box;
+  --color: #0077b6;
+}
+
+ion-button.custom-button3:focus {
+  color: black;
+}
+
+ion-icon.custom-icon {
+  padding: 0px;
+  margin: 0px;
+  font-size: 50px;
+}
 
