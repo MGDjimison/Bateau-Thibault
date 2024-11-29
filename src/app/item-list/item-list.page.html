@@ -34,5 +34,16 @@
         </ion-label>
       </ion-item>
     </ng-container>
+
+    <ng-container *ngIf="type === 'recettes'">
+      <ion-item *ngFor="let item of items">
+        <a [routerLink]="[item.id]">
+          <img [src]="item.image" alt="recettes" class="item-image" />
+          <ion-label class="text-section">
+            <h1>{{ item.name }}</h1>
+          </ion-label>
+        </a>
+      </ion-item>
+    </ng-container>
   </ion-list>
 </app-container>

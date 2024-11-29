@@ -233,5 +233,37 @@
             "owner":"tig",
             "image":"https://www.maisondelhuitre.fr/wp-content/uploads/2024/06/moules-peche-1024x682.jpg"
         }
-    ]
+    ],
+"recettes": [
+    {
+        "id": 1,
+        "name": "Bar de ligne grillé au citron",
+        "description": "Un plat simple et délicieux, parfait pour un repas léger. Le bar est grillé avec des herbes fraîches et arrosé de jus de citron.",
+        "image": "https://i-sam.unimedias.fr/2022/04/15/bar-grille-au-citron-et-a-laubergine.jpg?auto=format%2Ccompress&crop=faces&cs=tinysrgb&fit=crop&h=501&w=890"
+    },
+    {
+        "id": 2,
+        "name": "Aile de raie au beurre noir",
+        "description": "Une recette classique où l'aile de raie est servie avec une sauce au beurre noisette et des câpres.",
+        "image": "https://img.cuisineaz.com/660x495/2013/12/20/i58804-raie-au-beurre-noir.webp"
+    },
+    {
+        "id": 3,
+        "name": "Huitres gratinées au parmesan",
+        "description": "Des huîtres gratinées avec une touche de parmesan et une sauce crémeuse.",
+        "image": "https://poissons-coquillages-crustaces.fr/wp-content/uploads/2020/12/huitres-gratinees-parmesan.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Lieu jaune poêlé au fenouil",
+        "description": "Un lieu jaune savoureux, accompagné de fenouil croquant et d'une sauce légère au citron.",
+        "image": "https://www.pavillonfrance.fr/sites/default/files/pf_lieu_jaune_vapeur_et_fenouil_confit_a_lorange_cr_cooklook.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Bouquets sautés à l'ail et persil",
+        "description": "Des crevettes sautées à l'ail et au persil, parfaites pour un apéritif ou une entrée.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTzi2eKt8HkZz-GmDIcFHQP9dNR3OrbxU18Q&s"
+    }
+]
 }

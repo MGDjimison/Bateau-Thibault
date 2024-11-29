@@ -20,9 +20,7 @@
 
     <div class="pickerZone">
       <ion-item>
-        <ion-select 
-          label="Choisir le point de livraison"
-          [(ngModel)]="selectedDeliveryPoint">
+        <ion-select label="Choisir le point de livraison" [(ngModel)]="selectedDeliveryPoint">
           <ion-select-option *ngFor="let i of restaurants" [value]="i.name">
             {{ i.name }}
           </ion-select-option>
@@ -30,10 +28,13 @@
       </ion-item>
     </div>
 
-    <ion-button 
-      class="custom-button2" 
-      (click)="order()" 
-      [disabled]="!selectedDeliveryPoint">
+    <div class="total-price">
+      <ion-label class="text-section">
+        <h2>Total : {{ getTotalPrice() }} euros</h2>
+      </ion-label>
+    </div>
+
+    <ion-button class="custom-button2" (click)="order()" [disabled]="!selectedDeliveryPoint">
       Valider la commande
     </ion-button>
   </ng-container>

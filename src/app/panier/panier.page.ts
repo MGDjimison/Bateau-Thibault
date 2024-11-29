@@ -37,8 +37,8 @@ export class PanierPage implements OnInit {
 
   order() {
     if (this.selectedDeliveryPoint) {
-      console.log('Order confirmed with delivery point:', this.selectedDeliveryPoint);
       localStorage.clear();
+      this.selectedDeliveryPoint = ''
       this.router.navigate(['/home']);
     }
   }
@@ -53,7 +53,6 @@ export class PanierPage implements OnInit {
     this.http.get<any>(filePath).subscribe(
       (data) => {
         this.restaurants = data["restaurants"] || [];
-        console.log(this.restaurants)
       },
       (error) => {
         console.error('Failed to load items.json', error);
@@ -64,10 +63,13 @@ export class PanierPage implements OnInit {
   
   ionViewWillEnter() { this.refreshList(); }
 
+  getTotalPrice(): number {
+    return this.items.reduce((total, item) => total + item.price * item.quantite, 0);
+  }
+
 
   getFromStorage(): { id: string; quantite: number; [key: string]: any }[] {
     const key = 'produits';
-  
     try {
       const storedData = localStorage.getItem(key);
       if (storedData) {
@@ -90,8 +92,6 @@ export class PanierPage implements OnInit {
         const updatedProduits = produits.filter(item => item.id !== produitId);
 
         window.localStorage.setItem(key, JSON.stringify(updatedProduits));
-        console.log('Produit deleted:', produitId);
-        console.log('Updated produits:', updatedProduits);
     } else {
         console.log('No produits found in localStorage to delete.');
     }

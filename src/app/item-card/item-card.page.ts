@@ -32,12 +32,8 @@ export class ItemCardPage implements OnInit {
     this.route.paramMap.subscribe((params) => {
       this.type = params.get('type') || ''; 
       this.id = params.get('id') || ''; 
-      console.log(this.id)
-      console.log(this.type)
       this.loadItem();
     });
-
-    console.log("LocalStorage : ", localStorage.getItem('produits'))
   }
 
   range(count: number): number[] {
@@ -45,7 +41,6 @@ export class ItemCardPage implements OnInit {
   }
 
   updateQuantite(event: any): void {
-    console.log("here")
     this.selectedQuantite = parseInt(event.detail.value, 10);
   }
 
