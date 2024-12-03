@@ -3,10 +3,13 @@
     --ion-tab-bar-color: #ffffff; /* Default color for inactive icons/text */
     --ion-tab-bar-color-selected: #ffd700; /* Active color for icons/text */
     --ion-tab-bar-height: 80px; /* Adjust tab bar height */
+
+
 }
 
 .custom-tabs ion-tab-bar {
     height: 80px; /* Matches the custom height for the tab bar */
+    width: auto;
     padding-bottom: 10px; /* Optional: add spacing for icons/text */
     align-items: center; /* Vertically align icons and labels */
 }
@@ -18,6 +21,15 @@
 }
 
 .custom-tabs ion-tab-icon {
-    height: 30px; /* Adjust icon size if needed */
+    height: 30px;
     width: 30px;
+}
+
+.tab-icon {
+    pointer-events: none; 
+    display: block;
+    padding: 1vw;
+    height: 12vw;
+    width: 12vw;
+    border-radius: 10px;
 }

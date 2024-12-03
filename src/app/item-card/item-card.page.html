@@ -1,0 +1,55 @@
+<app-container>
+  <ng-container *ngIf="type === 'bateaux' && item != undefined">
+    <div class="image-container">
+      <img src={{item.image}} alt="image bateau" />
+    </div>
+
+    <div class="text-section2">
+      <h1>{{item.nom_bateau}}</h1>
+      <h2>Longueur : {{item.longueur}}</h2>
+      <p class="bateauDesc">
+        {{item.Description}}
+      </p>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="type === 'produits' && item != undefined">
+    <div class="image-container">
+      <img src={{item.image}} alt="image produit" />
+    </div>
+    <div class="text-section">
+      <h1>{{item.name}}</h1>
+      <p>
+        {{item.comments}}
+      </p>
+      <p>
+        Prix : {{item.price}} / {{item.unit}}
+      </p>
+      <p>
+        Disponibilité : {{ item.availability ? 'En Stock' : 'Rupture de stock' }}
+      </p>
+    </div>
+    <div class="pickerZone">
+      <ion-item>
+        <ion-select label="Quantité" placeholder="par {{item.unit}}" (ionChange)="updateQuantite($event)">
+          <ion-select-option *ngFor="let i of range(20)" [value]="i">{{i}}</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-button class="custom-button" (click)="saveToStorage(item, selectedQuantite)" [disabled]="!selectedQuantite">
+        Ajouter au panier
+      </ion-button>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="type === 'recettes' && item != undefined">
+    <div class="image-container">
+      <img src={{item.image}} alt="image produit" />
+    </div>
+    <div class="text-section2">
+      <h1>{{item.name}}</h1>
+      <p>
+        {{item.description}}
+      </p>
+    </div>
+  </ng-container>
+</app-container>

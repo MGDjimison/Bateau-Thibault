@@ -3,7 +3,7 @@
 .container {
   position: relative;
   background-color: #E9E9E9;
-  height: 85vh; 
+  height: 100vh; 
   display: flex;
   flex-direction: column;
   overflow: hidden; 
@@ -12,14 +12,15 @@
 .container-card {
   position: relative;
   background-color: #ffffff;
-  height: fit-content;
+  flex: 1; 
   margin: 15px;
   border-radius: 15px;
   padding: 10px;
+  overflow-y: auto; 
 }
 
 .image-container {
-  border-radius: 30px;
+  border-radius: 100px;
 }
 
 .text-section {
@@ -32,10 +33,34 @@
 
 .text-section h1 {
   line-height: 50%;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .text-section h2 {
   line-height: 50%;
-  font-size: 140px;
+  font-size: 60px;
+  text-align: center;
 }
+
+.text-section p {
+  line-height: 50%;
+  font-size: 20px;
+}
+
+.item-image {
+  width: 80px;
+  padding-right: 5px;
+  border-radius: 10px; 
+}
+
+ion-item {
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+

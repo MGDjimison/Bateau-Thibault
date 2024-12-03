@@ -1,18 +1,18 @@
 <ion-tabs class="custom-tabs">
   <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="home">
+    <ion-tab-button tab="liste/bateaux">
       <object type="image/svg+xml" data="assets/bateau.svg" class="tab-icon"></object>
     </ion-tab-button>
-    <ion-tab-button tab="radio">
+    <ion-tab-button [routerLink]="['/liste', 'produits']">
       <object type="image/svg+xml" data="assets/poisson.svg" class="tab-icon"></object>
     </ion-tab-button>
-    <ion-tab-button tab="library">
+    <ion-tab-button tab="liste/restaurants">
       <object type="image/svg+xml" data="assets/resto.svg" class="tab-icon"></object>
     </ion-tab-button>
-    <ion-tab-button tab="search">
+    <ion-tab-button tab="liste/recettes">
       <object type="image/svg+xml" data="assets/Recettes.svg" class="tab-icon"></object>
     </ion-tab-button>
-    <ion-tab-button tab="search">
+    <ion-tab-button tab="contacts">
       <object type="image/svg+xml" data="assets/contacts.svg" class="tab-icon"></object>
     </ion-tab-button>
   </ion-tab-bar>

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Staatliches&display=swap');
+
+.container {
+    position: relative;
+    background-color: #E9E9E9;
+    height: 85vh; 
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+}
+  
+.container-card {
+    position: relative;
+    background-color: #ffffff;
+    flex: 1; 
+    margin: 15px;
+    border-radius: 15px;
+    padding: 10px;
+    overflow-y: auto; 
+    max-height: calc(100% - 80px);
+}
+
+.image-container {
+  border-radius: 30px;
+}
+
+.text-section {
+  font-family: "Jomhuria", serif;
+  line-height: 150%;
+  font-style: normal;
+  color: #0077b6;
+  padding: 10px;
+}
+
+.text-section h1 {
+  line-height: 50%;
+  font-size: 60px;
+}
+
+.text-section h2 {
+  line-height: 50%;
+  font-size: 140px;
+}
+
+ion-button.custom-button3 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    --background: transparent;
+    padding: 0px;
+    margin: 0px;
+    --color: #0077b6;
+    padding-bottom: 10px;
+}
+
+  
+  ion-icon.custom-icon {
+    padding: 0px;
+    margin: 0px;
+    font-size: 50px;
+  }
+  

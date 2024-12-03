@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Staatliches&display=swap');
+
+.container {
+  position: relative;
+  background-color: #E9E9E9;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; 
+}
+
+.container-card {
+  position: relative;
+  background-color: #ffffff;
+  flex: 1; 
+  margin: 15px;
+  border-radius: 15px;
+  padding: 10px;
+  overflow-y: auto; 
+}
+
+.image-container {
+  border-radius: 100px;
+}
+
+.text-section {
+  font-family: "Jomhuria", serif;
+  line-height: 150%;
+  font-style: normal;
+  color: #0077b6;
+  padding: 10px;
+}
+
+.text-section h1 {
+  line-height: 50%;
+  font-size: 50px;
+}
+
+.text-section h2 {
+  line-height: 50%;
+  font-size: 60px;
+  text-align: center;
+}
+
+.text-section p {
+  line-height: 50%;
+  font-size: 20px;
+}
+
+.item-image {
+  width: 80px;
+  padding-right: 5px;
+  border-radius: 10px; 
+}
+
+ion-item {
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+ion-button.custom-button {
+  --background: #0077b6;
+  --color: white;
+}
+
+ion-button.custom-button2 {
+  --background: #0077b6;
+  --color: white;
+  width: 100%;
+}
+
+ion-button.custom-button3 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  --background: transparent;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: content-box;
+  --color: #0077b6;
+}
+
+ion-button.custom-button3:focus {
+  color: black;
+}
+
+ion-icon.custom-icon {
+  padding: 0px;
+  margin: 0px;
+  font-size: 50px;
+}
+
